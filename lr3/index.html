@@ -304,6 +304,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -366,6 +373,13 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     Основные файлы с кодом
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API
   </a>
   
 </li>
@@ -667,6 +681,223 @@
 <a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="p">]</span>
 </code></pre></div></li>
 </ul>
+<h2 id="api">API</h2>
+<table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>HTTP запрос</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>auth_token_login_create</td>
+<td>POST /auth/token/login/</td>
+<td>Получение токена аутентификации</td>
+</tr>
+<tr>
+<td>auth_token_logout_create</td>
+<td>POST /auth/token/logout/</td>
+<td>Выход из системы</td>
+</tr>
+<tr>
+<td>auth_users_activation</td>
+<td>POST /auth/users/activation/</td>
+<td>Активные пользователи</td>
+</tr>
+<tr>
+<td>auth_users_create</td>
+<td>POST /auth/users/</td>
+<td>Регистрация нового пользователя</td>
+</tr>
+<tr>
+<td>auth_users_delete</td>
+<td>DELETE /auth/users/{id}/</td>
+<td>Удаление пользователя</td>
+</tr>
+<tr>
+<td>auth_users_list</td>
+<td>GET /auth/users/</td>
+<td>Список всех пользователей</td>
+</tr>
+<tr>
+<td>auth_users_me_delete</td>
+<td>DELETE /auth/users/me/</td>
+<td>Удаление аутентифицированного пользователя</td>
+</tr>
+<tr>
+<td>auth_users_me_update</td>
+<td>PUT /auth/users/me/</td>
+<td>Обновление информации об аутентифицированном пользователе</td>
+</tr>
+<tr>
+<td>auth_users_me_read</td>
+<td>GET /auth/users/me/</td>
+<td>Вывод информации об аутентифицированном пользователе</td>
+</tr>
+<tr>
+<td>auth_users_read</td>
+<td>GET /auth/users/{id}/</td>
+<td>Вывод информации о конкретном пользователе по id</td>
+</tr>
+<tr>
+<td>auth_users_resend_activation</td>
+<td>POST /auth/users/resend_activation/</td>
+<td>Отправление активационного письма по электронной почте</td>
+</tr>
+<tr>
+<td>auth_users_reset_password</td>
+<td>POST /auth/users/reset_password/</td>
+<td>Смена пароля</td>
+</tr>
+<tr>
+<td>auth_users_reset_password_confirm</td>
+<td>POST /auth/users/reset_password_confirm/</td>
+<td>Подтверждение смены пароля (завершение процесса смены пароля)</td>
+</tr>
+<tr>
+<td>auth_users_reset_username</td>
+<td>POST /auth/users/reset_username/</td>
+<td>Смена никнейма</td>
+</tr>
+<tr>
+<td>auth_users_reset_username_confirm</td>
+<td>POST /auth/users/reset_username_confirm/</td>
+<td>Подтверждение смены никнейма (завершение процесса смены никнейма)</td>
+</tr>
+<tr>
+<td>auth_users_set_password</td>
+<td>POST /auth/users/set_password/</td>
+<td>Создание пароля</td>
+</tr>
+<tr>
+<td>auth_users_set_username</td>
+<td>POST /api/auth/users/set_username/</td>
+<td>Создание никнейма</td>
+</tr>
+<tr>
+<td>auth_users_update</td>
+<td>PUT /auth/users/{id}/</td>
+<td>Обновление информации о конкретном пользователе по id</td>
+</tr>
+<tr>
+<td>library_readers_list</td>
+<td>GET /library/readers/list/</td>
+<td>Список читателей</td>
+</tr>
+<tr>
+<td>library_readers_create</td>
+<td>POST /library/readers/create/</td>
+<td>Регистрация нового читателя</td>
+</tr>
+<tr>
+<td>library_readers_read</td>
+<td>GET /library/readers/read/{id}</td>
+<td>Вывод информации о конкретном читателе</td>
+</tr>
+<tr>
+<td>library_readers_partial_update</td>
+<td>PUTCH /library/readers/{id}</td>
+<td>Обновление информации о конкретном пользователе</td>
+</tr>
+<tr>
+<td>library_readers_delete</td>
+<td>DELETE /library/readers/{id}</td>
+<td>Удаление пользователя</td>
+</tr>
+<tr>
+<td>library_books_list</td>
+<td>GET /library/books/list/</td>
+<td>Список произведений в библиотеке</td>
+</tr>
+<tr>
+<td>library_books_create</td>
+<td>POST /library/books/create/</td>
+<td>Поступление нового произведения</td>
+</tr>
+<tr>
+<td>library_books_read</td>
+<td>GET /library/books/read/{id_book}</td>
+<td>Вывод информации о конкретном произведении</td>
+</tr>
+<tr>
+<td>library_books_partial_update</td>
+<td>PUTCH /library/books/{id_book}</td>
+<td>Обновление информации о конкретном произведении</td>
+</tr>
+<tr>
+<td>library_books_delete</td>
+<td>DELETE /library/books/{id}</td>
+<td>Удаление произведения</td>
+</tr>
+<tr>
+<td>library_inst_list</td>
+<td>GET /library/inst/list/</td>
+<td>Список экземпляров произведения</td>
+</tr>
+<tr>
+<td>library_inst_create</td>
+<td>POST /library/inst/create/</td>
+<td>Поступление нового экземпляра</td>
+</tr>
+<tr>
+<td>library_inst_read</td>
+<td>GET /library/inst/read/{id_instance}</td>
+<td>Вывод информации о конкретном экземпляре</td>
+</tr>
+<tr>
+<td>library_inst_partial_update</td>
+<td>PUTCH /library/inst/{id_instance}</td>
+<td>Обновление информации о конкретном экземпляре</td>
+</tr>
+<tr>
+<td>library_inst_delete</td>
+<td>DELETE /library/inst/{id_instance}</td>
+<td>Удаление экземпляра</td>
+</tr>
+<tr>
+<td>library_rooms_list</td>
+<td>GET /library/rooms/list/</td>
+<td>Список всех комнат библиотеки</td>
+</tr>
+<tr>
+<td>library_rooms_create</td>
+<td>POST /library/rooms/create/</td>
+<td>Регистрация новой комнаты в библиотеке</td>
+</tr>
+<tr>
+<td>library_rooms_read</td>
+<td>GET /library/rooms/read/{id_instance}</td>
+<td>Вывод информации о конкретной комнате</td>
+</tr>
+<tr>
+<td>library_rooms_partial_update</td>
+<td>PUTCH /library/rooms/{id}</td>
+<td>Обновление информации о конкретном комнате</td>
+</tr>
+<tr>
+<td>library_rooms_delete</td>
+<td>DELETE /library/rooms/{id}</td>
+<td>Удаление комнаты</td>
+</tr>
+<tr>
+<td>library_book_inst</td>
+<td>POST /library/book/inst/</td>
+<td>Закрепление конкретного экземпляра за читателем</td>
+</tr>
+<tr>
+<td>library_book_readers</td>
+<td>POST /library/book/readers/</td>
+<td>Закрепление конкретного читателя за комнатой</td>
+</tr>
+<tr>
+<td>library_book_room</td>
+<td>POST /library/book/room/</td>
+<td>Закрепление конкретного экземпляра за комнатой</td>
+</tr>
+</tbody>
+</table>
 
 
 
